@@ -1,3 +1,61 @@
 body {
   background: blanchedalmond;
+  font-size: 3px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+* {
+  border: 1px solid hotpink;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ccc;
+  color: hotpink 2px;
+}
+
+.a, .b, .c, .d, .e, .f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #ccc;
+  border: hotpink 2px;
+}
+
+.a {
+}
+
+.b {
+  height: 400px;
+}
+
+.c {
+  width: 33.333;
+}
+
+.bc {
+  display: flex;
+  flex-direction: row;
+}
+
+
+@media only screen and (min-width: 992px) {
+
+  .a, .b {
+    height: 400px;
+    width: 300px;
+  }
+
+
+  .bc {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
 }
